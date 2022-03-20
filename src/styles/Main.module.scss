@@ -1,0 +1,140 @@
+@import './Variables.module.scss';
+
+.main {
+  height: 100%;
+  padding: 20px;
+}
+
+.form {
+  border-bottom: 1px solid $bgwhite;
+  textarea {
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 2px;
+    padding: 4px 6px;
+    font-size: 18px;
+    font-family: sans-serif;
+    resize: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  .mainbutton {
+    text-align: right;
+    margin-bottom: 6px;
+    button {
+      border: none;
+      background-color: $bgblue;
+      color: $bgwhite;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+}
+
+.searchform {
+  padding: 8px 0;
+  input {
+    background-color: $bgwhite;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 6px;
+    border: none;
+    border-radius: 6px;
+    &:focus {
+      outline: none;
+      border: 1px solid $bgblue;
+    }
+  }
+}
+
+.postslist {
+  list-style: none;
+  li {
+    background-color: $bgwhite;
+    border-radius: 6px;
+    padding: 6px 4px;
+    margin: 8px 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.toppostelement {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  p {
+    overflow: auto;
+  }
+}
+
+.buttonsblock {
+  display: flex;
+  button {
+    margin: 0 8px;
+    color: $bgblue;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.botpostelement {
+  span {
+    color: $bgdarkblue;
+    margin-right: 6px;
+    font-size: 14px;
+  }
+}
+
+.edititem {
+  border: 1px solid $bgblue;
+}
+
+.topinput {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  textarea {
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    resize: none;
+    font-family: sans-serif;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    margin: 0 8px;
+    color: $bgblue;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.botinput {
+  textarea {
+    height: 20px;
+    border: none;
+    font-size: 14px;
+    color: $bgdarkblue;
+    width: 100%;
+    resize: none;
+    font-family: sans-serif;
+    &:focus {
+      outline: none;
+    }
+  }
+}
